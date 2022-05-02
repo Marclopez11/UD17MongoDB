@@ -1,0 +1,12 @@
+use almacenes
+db.createCollection(‘Cajeros’)
+db.createCollection(‘Productos’)
+db.createCollection(‘Maquinas_registadoras’)
+db.createCollection(‘Venta’)
+
+
+db.Cajeros.insertOne({codigo:1,nomapels:”Cajero Baix”})
+db.Productos.insertOne({codigo:1,nombre:”Desodorante”})
+db.Maquinas_registadoras.insertOne({codigo:1,piso:1})
+db.Venta.insertOne({cajero:1,maquina:1,producto:1})
+
