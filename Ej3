@@ -1,0 +1,12 @@
+use almacenes
+db.createCollection(‘Almacenes’)
+db.createCollection(‘Cajas’)
+
+
+db.Almacenes.insertOne({codigo:1,lugar:"Reus",capacidad:67})
+db.Almacenes.insertOne({codigo:2,lugar:"Vila-seca",capacidad:10})
+
+db.Cajas.insertOne({numreferenia:”acdf”,contenido:"Papeles",valor:10,almacen:1})
+db.Cajas.insertOne({numreferenia:”frds”,contenido:"Cristales",valor:15,almacen:2})
+
+
