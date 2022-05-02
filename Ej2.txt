@@ -1,0 +1,9 @@
+use empleados
+db.createCollection(‘Departamentos’)
+db.createCollection(‘Empleados’)
+
+db.Departamentos.insertOne({_id:1,codigo:1,nombre:"Departamento1",presupuesto:23000})
+db.Departamentos.insertOne({_id:2,codigo:2,nombre:"Departamento2",presupuesto:67000})
+
+db.Empleados.insertOne({dni:”34243432A”,nombre:”Marc”,apellidos:”lopez”,departamento:”1”})
+db.Empleados.insertOne({dni:”34276332B”,nombre:”Adri”,apellidos:”lopez”,departamento:”2”})
