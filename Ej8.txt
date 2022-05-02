@@ -1,0 +1,11 @@
+use investigadores
+db.createCollection(‘Facultad’)
+db.createCollection(‘Equipos’)
+db.createCollection(‘Investigadores’)
+db.createCollection(‘Reserva’)
+
+
+db.Facultad.insertOne({codigo:1,nombre:”uvic”})
+db.Equipos.insertOne({numserie:”asdf”,nombre:”equip1”,id_facultad:1})
+db.Investigadores.insertOne({dni:”42683562A”,nombreapels:”inves1”,id_facultad:1})
+db.Reserva.insertOne({dni:”42683562A”,numserie:”asdf”,comienzo:20141231235959,fin:20141231235959})
