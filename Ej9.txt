@@ -1,0 +1,8 @@
+use cientificos
+db.createCollection(‘Cientificos’)
+db.createCollection(‘Proyecto’)
+db.createCollection(‘Asignado_a’)
+
+db.Cientificos.insertOne({codigo:”45267356G”,nomapels:”Marc lopez”})
+db.Proyecto.insertOne({_id:”lsoe”,nombre:”Proyecto1”,horas:124})
+db.Asignado_a.insertOne({codigo:”45267356G”,proyecto:”lsoe”})
