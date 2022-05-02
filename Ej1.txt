@@ -1,0 +1,12 @@
+
+use tiendainformatica
+db.createCollection('Fabricantes')
+db.createCollection('Articulos')
+
+db.fabricantes.insertOne({_id:1,nombre: 'Apple'})
+db.fabricantes.insertOne({_id:1,nombre: 'Sony'})
+
+db.articulos.insertOne({_id:1,nombre: 'Iphone',Precio:600,Fabricante:1})
+db.articulos.insertOne({_id:2,nombre: 'Mac',Precio:1400,Fabricante:1})
+
+
